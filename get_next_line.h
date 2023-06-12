@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 14:38:19 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/06/12 19:28:04 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/06/12 21:45:18 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@
 size_t	ft_strlen(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *str);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*get_next_line(int fd);
 
 #endif

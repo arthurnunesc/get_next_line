@@ -1,6 +1,7 @@
 file 1, this line is bigger than 42 characters, which is the default buffer size
-line 1
-line 2 with spaces in the end     
-     line 3 with spaces in the beggining
-line 4
+line 2
+line 3 with 4 spaces in the end    
+    line 4 with 4 spaces in the beggining
 line 5
+line 6
+line 7 hahahaha
