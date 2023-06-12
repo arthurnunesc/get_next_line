@@ -1,0 +1,43 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile.test                                      :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: anunes-c <anunesc-@student.42barcel>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/06/12 15:18:55 by anunes-c          #+#    #+#              #
+#    Updated: 2023/06/12 19:14:04 by anunes-c         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = get_next_line.out
+HEADER = get_next_line.h
+
+CC = cc
+CFLAGS = 
+
+RM = rm -f
+
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+DEPS = $(OBJS:.o=.d)
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)	
+
+%.o: %.c %.d
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) $(OBJS) $(DEPS)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+-include $(DEPS)
+
+.PHONY: all clean fclean re

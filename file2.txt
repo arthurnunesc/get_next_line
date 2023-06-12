@@ -1,0 +1,6 @@
+file 2
+line 1
+line 2 with spaces in the end     
+     line 3 with spaces in the beggining
+line 4
+line 5
