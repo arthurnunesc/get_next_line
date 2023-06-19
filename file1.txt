@@ -1,4 +1,4 @@
-file 1, this line is bigger than 42 characters, which is the default buffer size
+01234567890123456789012345678901234567890123
 line 2
 line 3 with 4 spaces in the end    
     line 4 with 4 spaces in the beggining
